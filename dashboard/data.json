@@ -1,6 +1,5 @@
 {
-  "generated_at": "2026-04-14T11:10:08.258866",
-  "title": "Debt paydown Pilot",
+  "title": "Debt Paydown Pilot Participant Tracker",
   "theme": {
     "teal": "#45818e",
     "tealDark": "#2e5f6a",
@@ -113,7 +112,7 @@
           11.0
         ],
         "xMax": 250.0,
-        "chartHeight": 304
+        "chartHeight": 272
       },
       "flows": {
         "All participants": {
@@ -465,7 +464,7 @@
           ]
         }
       },
-      "card_min_px": 580
+      "card_min_px": 392
     },
     "2026-04-06": {
       "week_context": "Week of Apr 6, 2026",
@@ -529,7 +528,7 @@
           11.0
         ],
         "xMax": 350.0,
-        "chartHeight": 304
+        "chartHeight": 272
       },
       "flows": {
         "All participants": {
@@ -881,7 +880,7 @@
           ]
         }
       },
-      "card_min_px": 580
+      "card_min_px": 392
     },
     "2026-04-13": {
       "week_context": "Week of Apr 13, 2026",
@@ -945,7 +944,7 @@
           11.0
         ],
         "xMax": 100.0,
-        "chartHeight": 304
+        "chartHeight": 272
       },
       "flows": {
         "All participants": {
@@ -1297,7 +1296,7 @@
           ]
         }
       },
-      "card_min_px": 580
+      "card_min_px": 392
     },
     "__total_since_mar30__": {
       "week_context": "Total",
@@ -1361,7 +1360,7 @@
           33.0
         ],
         "xMax": 150.0,
-        "chartHeight": 304
+        "chartHeight": 272
       },
       "flows": {
         "All participants": {
@@ -2037,7 +2036,8 @@
           ]
         }
       },
-      "card_min_px": 580
+      "card_min_px": 392
     }
-  }
+  },
+  "snowflake_refreshed_at": "2026-04-14T10:27:30.717867"
 }

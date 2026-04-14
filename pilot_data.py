@@ -69,10 +69,25 @@ def save_data_cache(
     activity.to_pickle(ACTIVITY_CACHE)
     if allocation_events is not None:
         allocation_events.to_pickle(ALLOCATION_CACHE)
+    now_iso = pd.Timestamp.now().isoformat()
     CACHE_META.write_text(
-        json.dumps({"saved_at": pd.Timestamp.now().isoformat()}),
+        json.dumps({"saved_at": now_iso, "snowflake_refreshed_at": now_iso}),
         encoding="utf-8",
     )
+
+
+def read_snowflake_refreshed_at() -> str | None:
+    """ISO time of last Snowflake query that wrote .pilot_cache (None if no meta)."""
+    if not CACHE_META.is_file():
+        return None
+    try:
+        meta = json.loads(CACHE_META.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, TypeError):
+        return None
+    if not isinstance(meta, dict):
+        return None
+    v = meta.get("snowflake_refreshed_at") or meta.get("saved_at")
+    return str(v) if v else None
 
 
 def load_data_cache() -> tuple[pd.DataFrame, pd.DataFrame] | None:
@@ -761,7 +776,7 @@ def attainment_chart_payload(wk: pd.DataFrame) -> dict:
             "hours": [],
             "goals": [],
             "xMax": 100,
-            "chartHeight": 420,
+            "chartHeight": 260,
         }
     wk = wk.sort_values("hours_attainment_pct", ascending=False)
     names = wk["participant_name"].astype(str).tolist()
@@ -772,7 +787,7 @@ def attainment_chart_payload(wk: pd.DataFrame) -> dict:
     m = max(pcts) if pcts else 0.0
     x_max = float(max(100, int(math.ceil(max(m, 100.0) / 50.0)) * 50))
     n = len(names)
-    chart_h = int(max(280, min(560, 20 * n + 64)))
+    chart_h = int(max(260, min(500, 18 * n + 56)))
     return {
         "labels": names,
         "pcts": pcts,

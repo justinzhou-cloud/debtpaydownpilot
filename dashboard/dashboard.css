@@ -14,7 +14,7 @@
   --red: #b91c1c;
   --warn: #d97706;
   --font: "Nunito Sans", "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
-  --dm-attain-min: 420px;
+  --dm-attain-min: 340px;
 }
 
 * {
@@ -176,6 +176,11 @@ body {
   margin-bottom: 16px;
 }
 
+.split > .card {
+  min-width: 0;
+  align-self: stretch;
+}
+
 @media (max-width: 960px) {
   .split {
     grid-template-columns: 1fr;
@@ -199,6 +204,14 @@ body {
 
 .card--tall {
   min-height: var(--dm-attain-min);
+}
+
+/* Fill stretched grid row: chart area grows with table sibling */
+.card--attain .card-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .card--flow {
@@ -246,12 +259,14 @@ body {
   position: relative;
   width: 100%;
   flex: 1;
-  min-height: 280px;
+  min-height: 220px;
   background: #fff;
 }
 
 .chart-wrap--attain {
-  min-height: 280px;
+  flex: 1 1 auto;
+  min-height: 220px;
+  min-width: 0;
 }
 
 .chart-wrap--flow {

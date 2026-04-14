@@ -204,9 +204,11 @@
     const hours = pairs.map((p) => p.h);
     const goals = pairs.map((p) => p.g);
     const xMax = (att && att.xMax) || 100;
-    const h = (att && att.chartHeight) || 420;
-    canvas.parentElement.style.height = h + "px";
-    canvas.parentElement.style.minHeight = h + "px";
+    const h = (att && att.chartHeight) || 280;
+    const wrap = canvas.parentElement;
+    /* minHeight from data; height unset so flex can stretch chart to match participants card */
+    wrap.style.minHeight = h + "px";
+    wrap.style.height = "";
 
     if (!labels.length) {
       return;
@@ -293,6 +295,15 @@
             },
           },
         },
+      });
+      const bumpResize = () => {
+        if (attainmentChart) {
+          attainmentChart.resize();
+        }
+      };
+      requestAnimationFrame(() => {
+        bumpResize();
+        requestAnimationFrame(bumpResize);
       });
     } catch (e) {
       console.error("renderAttainment failed", e);
@@ -486,7 +497,7 @@
     if (!v) return;
 
     const theme = data.theme;
-    setAttainCardMin(v.card_min_px || 420);
+    setAttainCardMin(v.card_min_px || 360);
 
     $("participant-slot").innerHTML = v.participant_table_html || "";
     $("kpi-slot").innerHTML = v.kpi_html;
@@ -522,7 +533,14 @@
   function populateSelectors(data) {
     const el = $("data-refreshed-at");
     if (el) {
-      el.textContent = "Data last refreshed: " + formatDataRefreshed(data.generated_at);
+      const ts = data.snowflake_refreshed_at;
+      if (ts) {
+        el.style.display = "";
+        el.textContent = "Data last refreshed: " + formatDataRefreshed(ts);
+      } else {
+        el.textContent = "";
+        el.style.display = "none";
+      }
     }
 
     const sel = $("week-select");

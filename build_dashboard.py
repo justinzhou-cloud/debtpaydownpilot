@@ -43,6 +43,7 @@ from pilot_data import (
     build_daily_activity,
     clear_data_cache_files,
     data_cache_stale_vs_sql,
+    read_snowflake_refreshed_at,
 )
 from snowflake_client import ROOT
 from theme import CHART_GREEN_MUTED, CHART_LINE_TEAL, CHART_RED_MUTED, DD_GRAY_200, DD_GRAY_600
@@ -206,8 +207,9 @@ def main() -> None:
                 "outs": outs,
             }
 
-        n_sj = len(wk_view)
-        card_min = max(436, 92 + n_sj * 30 + 128)
+        # Min card height ≈ attainment chart + header/hint/padding (avoid huge empty band).
+        attain_h = int(att.get("chartHeight") or 280)
+        card_min = max(260, attain_h + 120)
         views[sel_key] = {
             "week_context": week_context,
             "kpi_html": kpi_html,
@@ -223,8 +225,7 @@ def main() -> None:
         default_key = week_options[0]["key"] if week_options else default_key
 
     payload = {
-        "generated_at": pd.Timestamp.now().isoformat(),
-        "title": "Debt paydown Pilot",
+        "title": "Debt Paydown Pilot Participant Tracker",
         "theme": theme_payload(),
         "week_options": week_options,
         "default_week_key": default_key,
@@ -232,6 +233,9 @@ def main() -> None:
         "cohort_size": n_cohort,
         "views": views,
     }
+    sf_at = read_snowflake_refreshed_at()
+    if sf_at:
+        payload["snowflake_refreshed_at"] = sf_at
 
     json_str = json.dumps(payload, indent=2, default=str)
     DATA_JSON.write_text(json_str, encoding="utf-8")
@@ -243,7 +247,10 @@ def main() -> None:
     print(f"Wrote {DATA_JS.resolve()}")
     print("Preview: python serve_dashboard.py  (data.js is loaded over HTTP, not as file://)")
     print("—" * 52)
-    print(f"generated_at: {payload['generated_at']}")
+    if sf_at:
+        print(f"snowflake_refreshed_at: {sf_at}")
+    else:
+        print("snowflake_refreshed_at: (none — no .pilot_cache/meta.json)")
     print("—" * 52)
 
 
