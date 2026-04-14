@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T10:41:15.419325",
+  "generated_at": "2026-04-14T10:27:30.930509",
   "data_from_cache": false,
   "title": "Debt paydown Pilot",
   "theme": {
@@ -886,63 +886,63 @@
     },
     "2026-04-13": {
       "week_context": "Week of Apr 13, 2026",
-      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">11 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">4 / 12</div><div class=\"mc-meta\">Below threshold</div></div></div>",
-      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Paydown</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$1.30</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$6.26</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$4.96</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"46601725\" aria-label=\"Debt paydown for Preston\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$4.53</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$4.53</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70847568\" aria-label=\"Debt paydown for Dylan\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span> <span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"67778641\" aria-label=\"Debt paydown for Angelo\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">15%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"14042159\" aria-label=\"Debt paydown for Christy\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$0.61</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$0.61</span></td><td class=\"col-num col-bal\">$3.88</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23449826\" aria-label=\"Debt paydown for Crystal Shead\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"37091042\" aria-label=\"Debt paydown for Cynthia\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$3.18</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$3.18</span></td><td class=\"col-num col-bal\">$11.40</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"19473824\" aria-label=\"Debt paydown for Efren\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$0.84</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$0.84</span></td><td class=\"col-num col-bal\">$4.66</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"59877246\" aria-label=\"Debt paydown for John Baker\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"58777515\" aria-label=\"Debt paydown for Jonathan N\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23609809\" aria-label=\"Debt paydown for Kimberly\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-pct-val\">\u2014</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70682470\" aria-label=\"Debt paydown for Marc Compher\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"17709935\" aria-label=\"Debt paydown for Rudy\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr></tbody></table></div>",
+      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">8 / 12</div><div class=\"mc-meta\">Below threshold</div></div></div>",
+      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Paydown</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$10.69</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$124.00</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$113.31</span></td><td class=\"col-num col-bal\">$5.31</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"37091042\" aria-label=\"Debt paydown for Cynthia\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$2.15</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$23.97</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$21.82</span></td><td class=\"col-num col-bal\">$30.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23609809\" aria-label=\"Debt paydown for Kimberly\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$6.15</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$11.11</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$4.96</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"46601725\" aria-label=\"Debt paydown for Preston\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$4.02</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$6.69</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$2.67</span></td><td class=\"col-num col-bal\">$0.60</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23449826\" aria-label=\"Debt paydown for Crystal Shead\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$3.11</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$6.27</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$3.16</span></td><td class=\"col-num col-bal\">$0.66</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"59877246\" aria-label=\"Debt paydown for John Baker\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$2.86</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$4.53</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$1.67</span></td><td class=\"col-num col-bal\">$2.86</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70847568\" aria-label=\"Debt paydown for Dylan\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"67778641\" aria-label=\"Debt paydown for Angelo\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">15%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"14042159\" aria-label=\"Debt paydown for Christy\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$12.62</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$12.62</span></td><td class=\"col-num col-bal\">$20.84</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"19473824\" aria-label=\"Debt paydown for Efren\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"58777515\" aria-label=\"Debt paydown for Jonathan N\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70682470\" aria-label=\"Debt paydown for Marc Compher\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$0.97</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$0.97</span></td><td class=\"col-num col-bal\">$1.20</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"17709935\" aria-label=\"Debt paydown for Rudy\" /></td><td class=\"col-flags\"></td></tr></tbody></table></div>",
       "attainment": {
         "labels": [
-          "Christy",
-          "Rudy",
-          "Kimberly",
-          "Cynthia",
           "Jonathan N",
           "Angelo",
+          "Rudy",
+          "Christy",
+          "John Baker",
+          "Kimberly",
           "Marc Compher",
           "Dylan",
           "Preston",
-          "John Baker",
           "Crystal Shead",
+          "Cynthia",
           "Efren"
         ],
         "pcts": [
           0.0,
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          4.189816666666666,
-          4.2638875,
-          5.636668,
-          25.2951375
+          3.3680549999999996,
+          8.361112499999999,
+          9.6545125,
+          9.669755555555556,
+          10.17901111111111,
+          14.89141818181818,
+          18.180555555555557,
+          25.543332000000003,
+          26.607142857142858,
+          44.743050000000004
         ],
         "hours": [
           0.0,
           0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.754167,
-          1.364444,
-          1.409167,
-          2.023611
+          0.673611,
+          0.668889,
+          3.089444,
+          0.870278,
+          0.916111,
+          1.638056,
+          3.2725,
+          6.385833,
+          5.5875,
+          3.579444
         ],
         "goals": [
-          8.0,
-          20.0,
-          9.0,
-          21.0,
           14.0,
           11.0,
+          20.0,
+          8.0,
+          32.0,
+          9.0,
           9.0,
           11.0,
           18.0,
-          32.0,
           25.0,
+          21.0,
           8.0
         ],
         "xMax": 100.0,
@@ -960,8 +960,8 @@
             "Apr 19"
           ],
           "ins": [
-            5.93,
-            0.0,
+            33.7,
+            8.870000000000001,
             0.0,
             0.0,
             0.0,
@@ -969,8 +969,8 @@
             0.0
           ],
           "outs": [
-            10.79,
-            0.0,
+            171.72,
+            4.85,
             0.0,
             0.0,
             0.0,
@@ -1047,8 +1047,8 @@
             "Apr 19"
           ],
           "ins": [
-            0.61,
-            0.0,
+            3.52,
+            0.5,
             0.0,
             0.0,
             0.0,
@@ -1056,7 +1056,7 @@
             0.0
           ],
           "outs": [
-            0.0,
+            6.69,
             0.0,
             0.0,
             0.0,
@@ -1076,7 +1076,7 @@
             "Apr 19"
           ],
           "ins": [
-            0.0,
+            10.690000000000001,
             0.0,
             0.0,
             0.0,
@@ -1085,7 +1085,7 @@
             0.0
           ],
           "outs": [
-            0.0,
+            124.0,
             0.0,
             0.0,
             0.0,
@@ -1106,7 +1106,7 @@
           ],
           "ins": [
             0.0,
-            0.0,
+            2.8600000000000003,
             0.0,
             0.0,
             0.0,
@@ -1134,7 +1134,7 @@
             "Apr 19"
           ],
           "ins": [
-            3.1799999999999997,
+            12.62,
             0.0,
             0.0,
             0.0,
@@ -1163,8 +1163,8 @@
             "Apr 19"
           ],
           "ins": [
-            0.84,
-            0.0,
+            2.45,
+            0.66,
             0.0,
             0.0,
             0.0,
@@ -1172,7 +1172,7 @@
             0.0
           ],
           "outs": [
-            0.0,
+            6.27,
             0.0,
             0.0,
             0.0,
@@ -1221,7 +1221,7 @@
             "Apr 19"
           ],
           "ins": [
-            0.0,
+            2.15,
             0.0,
             0.0,
             0.0,
@@ -1230,7 +1230,7 @@
             0.0
           ],
           "outs": [
-            0.0,
+            23.97,
             0.0,
             0.0,
             0.0,
@@ -1251,7 +1251,7 @@
           ],
           "ins": [
             1.3,
-            0.0,
+            4.85,
             0.0,
             0.0,
             0.0,
@@ -1260,7 +1260,7 @@
           ],
           "outs": [
             6.26,
-            0.0,
+            4.85,
             0.0,
             0.0,
             0.0,
@@ -1279,7 +1279,7 @@
             "Apr 19"
           ],
           "ins": [
-            0.0,
+            0.97,
             0.0,
             0.0,
             0.0,
@@ -1302,16 +1302,16 @@
     },
     "__total_since_mar30__": {
       "week_context": "Total",
-      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">11 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">11 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
-      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Paydown</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$274.12</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$203.64</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$70.48</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"37091042\" aria-label=\"Debt paydown for Cynthia\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$187.60</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$187.60</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"46601725\" aria-label=\"Debt paydown for Preston\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$104.95</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$136.50</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$31.55</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"17709935\" aria-label=\"Debt paydown for Rudy\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$108.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$108.28</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"58777515\" aria-label=\"Debt paydown for Jonathan N\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$51.95</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$60.05</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$8.10</span></td><td class=\"col-num col-bal\">$4.66</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"59877246\" aria-label=\"Debt paydown for John Baker\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$42.87</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$40.99</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$1.88</span></td><td class=\"col-num col-bal\">$3.88</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23449826\" aria-label=\"Debt paydown for Crystal Shead\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 12, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$41.91</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$30.51</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$11.40</span></td><td class=\"col-num col-bal\">$11.40</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"19473824\" aria-label=\"Debt paydown for Efren\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 7, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$28.25</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$28.25</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70847568\" aria-label=\"Debt paydown for Dylan\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">20%</span><span class=\"sj-tip\">Set to 20% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$9.70</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$9.70</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"67778641\" aria-label=\"Debt paydown for Angelo\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 10, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$57.13</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$5.31</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$51.82</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23609809\" aria-label=\"Debt paydown for Kimberly\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$32.92</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$32.92</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"14042159\" aria-label=\"Debt paydown for Christy\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-pct-val\">\u2014</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70682470\" aria-label=\"Debt paydown for Marc Compher\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr></tbody></table></div>",
+      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">11 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
+      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Paydown</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$284.81</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$327.64</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$42.83</span></td><td class=\"col-num col-bal\">$5.31</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"37091042\" aria-label=\"Debt paydown for Cynthia\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$192.45</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$192.45</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"46601725\" aria-label=\"Debt paydown for Preston\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$105.92</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$136.50</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$30.58</span></td><td class=\"col-num col-bal\">$1.20</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"17709935\" aria-label=\"Debt paydown for Rudy\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$108.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$108.28</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"58777515\" aria-label=\"Debt paydown for Jonathan N\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$54.22</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$66.32</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$12.10</span></td><td class=\"col-num col-bal\">$0.66</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"59877246\" aria-label=\"Debt paydown for John Baker\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$46.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$47.68</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$1.40</span></td><td class=\"col-num col-bal\">$0.60</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23449826\" aria-label=\"Debt paydown for Crystal Shead\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 12, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$51.35</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$30.51</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$20.84</span></td><td class=\"col-num col-bal\">$20.84</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"19473824\" aria-label=\"Debt paydown for Efren\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 10, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$59.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$29.28</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$30.00</span></td><td class=\"col-num col-bal\">$30.00</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"23609809\" aria-label=\"Debt paydown for Kimberly\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 7, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$31.11</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$28.25</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$2.86</span></td><td class=\"col-num col-bal\">$2.86</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70847568\" aria-label=\"Debt paydown for Dylan\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">20%</span><span class=\"sj-tip\">Set to 20% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$9.70</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$9.70</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"67778641\" aria-label=\"Debt paydown for Angelo\" /></td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$32.92</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$32.92</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"14042159\" aria-label=\"Debt paydown for Christy\" /></td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-paydown\"><input type=\"checkbox\" class=\"paydown-cb\" data-dasher-id=\"70682470\" aria-label=\"Debt paydown for Marc Compher\" /></td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr></tbody></table></div>",
       "attainment": {
         "labels": [
           "Angelo",
           "John Baker",
           "Dylan",
           "Christy",
-          "Crystal Shead",
           "Rudy",
+          "Crystal Shead",
           "Marc Compher",
           "Jonathan N",
           "Preston",
@@ -1321,39 +1321,39 @@
         ],
         "pcts": [
           9.36279393939394,
-          42.562210416666666,
-          55.9175090909091,
-          73.5451375,
-          80.79185199999999,
-          81.29398166666665,
-          87.75308518518518,
+          44.359085416666666,
+          60.88131515151516,
+          76.33217499999999,
+          82.41666666666666,
+          87.42740666666666,
+          91.14608888888888,
           97.1031738095238,
-          99.39609074074075,
-          124.7614634920635,
-          130.23379583333332,
-          144.58024814814817
+          104.05967037037038,
+          133.63051111111113,
+          136.71643333333333,
+          147.80349999999999
         ],
         "hours": [
           3.089722,
-          40.859722,
-          18.452778000000002,
-          17.650833,
-          60.59388899999999,
-          48.776388999999995,
-          23.693333,
+          42.584722,
+          20.090834,
+          18.319722,
+          49.449999999999996,
+          65.570555,
+          24.609444,
           40.783333,
-          53.673889,
-          78.599722,
-          31.256110999999997,
-          39.036667
+          56.192222,
+          84.187222,
+          32.811944,
+          39.906945
         ],
         "goals": [
           33.0,
           96.0,
           33.0,
           24.0,
-          75.0,
           60.0,
+          75.0,
           27.0,
           42.0,
           54.0,
@@ -1381,7 +1381,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             85.88,
@@ -1398,7 +1399,8 @@
             68.81,
             170.59,
             58.64,
-            5.93
+            33.7,
+            8.870000000000001
           ],
           "outs": [
             62.379999999999995,
@@ -1415,7 +1417,8 @@
             26.77,
             48.72,
             78.07,
-            10.79
+            171.72,
+            4.85
           ]
         },
         "Angelo": {
@@ -1434,7 +1437,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             0.0,
@@ -1445,6 +1449,7 @@
             0.0,
             0.0,
             9.7,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1463,6 +1468,7 @@
             0.0,
             0.0,
             9.7,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1487,7 +1493,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             0.0,
@@ -1504,9 +1511,11 @@
             0.0,
             5.23,
             9.71,
+            0.0,
             0.0
           ],
           "outs": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1540,7 +1549,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             1.51,
@@ -1557,7 +1567,8 @@
             0.34,
             0.39,
             11.83,
-            0.61
+            3.52,
+            0.5
           ],
           "outs": [
             0.0,
@@ -1574,6 +1585,7 @@
             0.0,
             0.0,
             10.0,
+            6.69,
             0.0
           ]
         },
@@ -1593,7 +1605,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             15.600000000000001,
@@ -1610,6 +1623,7 @@
             27.439999999999998,
             107.24,
             4.04,
+            10.690000000000001,
             0.0
           ],
           "outs": [
@@ -1627,6 +1641,7 @@
             0.0,
             10.0,
             15.0,
+            124.0,
             0.0
           ]
         },
@@ -1646,7 +1661,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             0.0,
@@ -1663,7 +1679,8 @@
             1.04,
             7.76,
             4.53,
-            0.0
+            0.0,
+            2.8600000000000003
           ],
           "outs": [
             0.0,
@@ -1680,7 +1697,8 @@
             1.04,
             7.76,
             0.0,
-            4.53
+            4.53,
+            0.0
           ]
         },
         "Efren": {
@@ -1699,7 +1717,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             0.66,
@@ -1716,7 +1735,8 @@
             3.15,
             4.64,
             0.43,
-            3.1799999999999997
+            12.62,
+            0.0
           ],
           "outs": [
             0.0,
@@ -1730,6 +1750,7 @@
             0.0,
             26.32,
             4.1899999999999995,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1752,7 +1773,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             12.58,
@@ -1769,7 +1791,8 @@
             5.96,
             3.35,
             6.029999999999999,
-            0.84
+            2.45,
+            0.66
           ],
           "outs": [
             25.34,
@@ -1786,6 +1809,7 @@
             5.96,
             1.0,
             4.5600000000000005,
+            6.27,
             0.0
           ]
         },
@@ -1805,7 +1829,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             12.04,
@@ -1822,6 +1847,7 @@
             7.45,
             19.38,
             8.979999999999999,
+            0.0,
             0.0
           ],
           "outs": [
@@ -1839,6 +1865,7 @@
             11.95,
             12.35,
             16.009999999999998,
+            0.0,
             0.0
           ]
         },
@@ -1858,7 +1885,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             1.95,
@@ -1875,6 +1903,7 @@
             6.46,
             0.0,
             0.0,
+            2.15,
             0.0
           ],
           "outs": [
@@ -1892,6 +1921,7 @@
             0.0,
             0.0,
             0.0,
+            23.97,
             0.0
           ]
         },
@@ -1911,7 +1941,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             38.32,
@@ -1928,7 +1959,8 @@
             13.74,
             3.87,
             4.96,
-            1.3
+            1.3,
+            4.85
           ],
           "outs": [
             25.0,
@@ -1945,7 +1977,8 @@
             7.82,
             17.61,
             0.0,
-            6.26
+            6.26,
+            4.85
           ]
         },
         "Rudy": {
@@ -1964,7 +1997,8 @@
             "Apr 10",
             "Apr 11",
             "Apr 12",
-            "Apr 13"
+            "Apr 13",
+            "Apr 14"
           ],
           "ins": [
             3.22,
@@ -1981,6 +2015,7 @@
             3.23,
             18.73,
             8.129999999999999,
+            0.97,
             0.0
           ],
           "outs": [
@@ -1998,6 +2033,7 @@
             0.0,
             0.0,
             32.5,
+            0.0,
             0.0
           ]
         }
