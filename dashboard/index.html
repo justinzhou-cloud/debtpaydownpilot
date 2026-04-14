@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>Debt paydown Pilot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Debt paydown Pilot</h1>
+      <div class="header-actions">
+        <button type="button" id="btn-refresh-data" class="header-btn" title="Reload latest data.js from the server">
+          Refresh data
+        </button>
+        <span id="pill-cache" class="pill">—</span>
+      </div>
+    </header>
+
+    <div id="app-root" class="wrap">
+      <div class="controls">
+        <div class="control">
+          <label for="week-select">Week</label>
+          <select id="week-select"></select>
+        </div>
+      </div>
+
+      <div id="kpi-slot"></div>
+
+      <div class="split">
+        <div class="card card--table card--participants">
+          <div class="sec-head">
+            <span class="sec-letter">P</span> Participants · savings jar snapshot
+          </div>
+          <div class="card-body">
+            <div id="participant-slot"></div>
+          </div>
+        </div>
+        <div class="card card--tall card--attain">
+          <div class="sec-head">
+            <span class="sec-letter">D</span> Dashing · hours attainment %
+          </div>
+          <div class="card-body">
+            <p class="card-hint">Bars show actual dashing hours ÷ recommended hours.</p>
+            <div class="chart-wrap chart-wrap--attain">
+              <canvas id="chart-attain"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--flow">
+        <div class="sec-head">
+          <span class="sec-letter">J</span> Savings jar movement · by day
+        </div>
+        <div class="card-body">
+          <p class="card-hint">Inflows (green) and outflows (red) for the selected week or Total (pilot to date).</p>
+          <div class="flow-controls">
+            <div class="control">
+              <label for="flow-participant">Participant</label>
+              <select id="flow-participant"></select>
+            </div>
+          </div>
+          <div id="flow-chart-wrap" class="chart-wrap chart-wrap--flow">
+            <canvas id="chart-flow"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="data.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
