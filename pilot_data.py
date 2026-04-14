@@ -101,6 +101,24 @@ def clear_data_cache_files() -> None:
             pass
 
 
+def data_cache_stale_vs_sql() -> bool:
+    """True if any tracked SQL file is newer than the on-disk query cache (edit SQL → re-query)."""
+    if not (COHORT_CACHE.is_file() and ACTIVITY_CACHE.is_file()):
+        return False
+    ref = CACHE_META if CACHE_META.is_file() else COHORT_CACHE
+    try:
+        cache_written = ref.stat().st_mtime
+    except OSError:
+        return True
+    paths = [SQL_COHORT, SQL_ACTIVITY]
+    if SQL_ALLOCATION_EVENTS.is_file():
+        paths.append(SQL_ALLOCATION_EVENTS)
+    try:
+        return any(p.stat().st_mtime > cache_written for p in paths)
+    except OSError:
+        return True
+
+
 def run_query(sql: str) -> pd.DataFrame:
     return normalize_snowflake_columns(query_to_dataframe(get_snowflake_connection(), sql))
 
@@ -614,14 +632,6 @@ def render_participant_master_table(
             f'<span class="flag">{html.escape(f)}</span>' for f in flags
         )
 
-        paydown_aria = html.escape(f"Debt paydown for {pname}")
-        paydown_cell = (
-            f'<td class="col-paydown">'
-            f'<input type="checkbox" class="paydown-cb" data-dasher-id="{did}" '
-            f'aria-label="{paydown_aria}" />'
-            f"</td>"
-        )
-
         body.append(
             "<tr>"
             f'<td class="col-name">{name}</td>'
@@ -630,7 +640,6 @@ def render_participant_master_table(
             f'<td class="col-num">{out_html}</td>'
             f'<td class="col-num">{net_html}</td>'
             f'<td class="col-num col-bal">{html.escape(bal_html)}</td>'
-            f"{paydown_cell}"
             f'<td class="col-flags">{flags_html}</td>'
             "</tr>"
         )
@@ -643,7 +652,6 @@ def render_participant_master_table(
         "<th>Outflow</th>"
         "<th>Net</th>"
         "<th>Jar bal.</th>"
-        "<th>Paydown</th>"
         "<th>Flags</th>"
         "</tr></thead>"
     )
@@ -745,7 +753,7 @@ def render_savings_jar_table(
 
 
 def attainment_chart_payload(wk: pd.DataFrame) -> dict:
-    """Rows by hours_attainment_pct ascending (dashboard sorts for display: high → low top-down)."""
+    """Rows by hours_attainment_pct descending (Chart.js category y: index 0 at top)."""
     if wk.empty or "hours_attainment_pct" not in wk.columns:
         return {
             "labels": [],
@@ -755,7 +763,7 @@ def attainment_chart_payload(wk: pd.DataFrame) -> dict:
             "xMax": 100,
             "chartHeight": 420,
         }
-    wk = wk.sort_values("hours_attainment_pct", ascending=True)
+    wk = wk.sort_values("hours_attainment_pct", ascending=False)
     names = wk["participant_name"].astype(str).tolist()
     pcts_raw = wk["hours_attainment_pct"].fillna(0).astype(float).tolist()
     pcts = [_fin(min(max(x, 0.0), 500.0)) for x in pcts_raw]

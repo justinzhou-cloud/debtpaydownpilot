@@ -17,10 +17,7 @@
     <header class="app-header">
       <h1>Debt paydown Pilot</h1>
       <div class="header-actions">
-        <button type="button" id="btn-refresh-data" class="header-btn" title="Reload latest data.js from the server">
-          Refresh data
-        </button>
-        <span id="pill-cache" class="pill">—</span>
+        <span id="data-refreshed-at" class="header-refreshed" aria-live="polite">—</span>
       </div>
     </header>
 
@@ -77,7 +74,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <script src="data.js"></script>
+    <!-- data.js is loaded inside dashboard.js (fetch + cache-bust) so deploys are not stuck on a cached script -->
     <script src="dashboard.js"></script>
   </body>
 </html>

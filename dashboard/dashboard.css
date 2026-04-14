@@ -56,39 +56,12 @@ body {
   flex-wrap: wrap;
 }
 
-.header-btn {
-  margin: 0;
-  font-family: inherit;
+.header-refreshed {
   font-size: 11px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  cursor: pointer;
-  letter-spacing: 0.02em;
-}
-
-.header-btn:hover {
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.header-btn:disabled {
-  opacity: 0.65;
-  cursor: wait;
-}
-
-.pill {
-  font-size: 10px;
-  font-weight: 700;
-  padding: 2px 9px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  color: #fff;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .wrap {
@@ -197,7 +170,7 @@ body {
 
 .split {
   display: grid;
-  grid-template-columns: minmax(0, 1.85fr) minmax(0, 0.72fr);
+  grid-template-columns: minmax(0, 1.58fr) minmax(0, 0.99fr);
   gap: 12px;
   align-items: stretch;
   margin-bottom: 16px;
@@ -469,31 +442,6 @@ body {
   font-size: 10px;
   font-weight: 600;
   color: #b91c1c;
-}
-
-.trend-table th:nth-child(7),
-.trend-table td.col-paydown {
-  text-align: center;
-}
-
-.trend-table td.col-paydown {
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 2.75rem;
-}
-
-.paydown-cb {
-  width: 1.125rem;
-  height: 1.125rem;
-  margin: 0;
-  accent-color: var(--teal);
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.paydown-cb:focus-visible {
-  outline: 2px solid var(--teal-light);
-  outline-offset: 2px;
 }
 
 .col-flags {

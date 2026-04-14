@@ -15,59 +15,6 @@
     return document.getElementById(id);
   }
 
-  const DEBT_PAYDOWN_STORAGE_KEY = "pilot_dashboard_debt_paydown_v1";
-
-  function loadDebtPaydownState() {
-    try {
-      const raw = localStorage.getItem(DEBT_PAYDOWN_STORAGE_KEY);
-      const o = raw ? JSON.parse(raw) : {};
-      return o && typeof o === "object" ? o : {};
-    } catch (e) {
-      return {};
-    }
-  }
-
-  function saveDebtPaydownState(state) {
-    try {
-      localStorage.setItem(DEBT_PAYDOWN_STORAGE_KEY, JSON.stringify(state));
-    } catch (e) {
-      console.warn("Could not save debt paydown state", e);
-    }
-  }
-
-  /** Restore manual debt paydown selections for the current week (per dasher_id). */
-  function applyDebtPaydownSelections(weekKey) {
-    const root = $("participant-slot");
-    if (!root) return;
-    const state = loadDebtPaydownState();
-    const weekMap = state[weekKey] || {};
-    root.querySelectorAll("input.paydown-cb").forEach((el) => {
-      const id = el.getAttribute("data-dasher-id");
-      if (id == null) return;
-      const v = weekMap[id];
-      el.checked = v === "complete" || v === true;
-    });
-  }
-
-  function onDebtPaydownChange(ev) {
-    const el = ev.target;
-    if (!el || el.type !== "checkbox" || !el.classList.contains("paydown-cb")) return;
-    const weekKey = $("week-select").value;
-    const id = el.getAttribute("data-dasher-id");
-    if (id == null) return;
-    const state = loadDebtPaydownState();
-    if (!state[weekKey]) state[weekKey] = {};
-    if (el.checked) {
-      state[weekKey][id] = "complete";
-    } else {
-      delete state[weekKey][id];
-    }
-    if (Object.keys(state[weekKey]).length === 0) {
-      delete state[weekKey];
-    }
-    saveDebtPaydownState(state);
-  }
-
   function setAttainCardMin(px) {
     document.documentElement.style.setProperty("--dm-attain-min", px + "px");
   }
@@ -249,7 +196,9 @@
         g: rawGoals[i],
       });
     }
-    pairs.sort((a, b) => a.pct - b.pct);
+    // Chart.js vertical *category* y-axis: index 0 is drawn at the TOP (CategoryScale inverts pixels).
+    // Descending pct → highest attainment first → top of chart, then down to lowest.
+    pairs.sort((a, b) => b.pct - a.pct);
     const labels = pairs.map((p) => p.label);
     const pcts = pairs.map((p) => p.pct);
     const hours = pairs.map((p) => p.h);
@@ -338,7 +287,6 @@
               },
             },
             y: {
-              /* Data ascending by % (low→high); category axis: low bottom, high top */
               reverse: false,
               grid: { display: false },
               ticks: { font: { size: 10.5 }, color: theme.tickMuted },
@@ -541,7 +489,6 @@
     setAttainCardMin(v.card_min_px || 420);
 
     $("participant-slot").innerHTML = v.participant_table_html || "";
-    applyDebtPaydownSelections($("week-select").value);
     $("kpi-slot").innerHTML = v.kpi_html;
 
     renderAttainment("chart-attain", v.attainment, theme);
@@ -565,8 +512,18 @@
     renderFlow("chart-flow", f.labels, f.ins, f.outs, theme);
   }
 
+  function formatDataRefreshed(iso) {
+    if (!iso) return "—";
+    const d = new Date(String(iso));
+    if (Number.isNaN(d.getTime())) return String(iso);
+    return d.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+  }
+
   function populateSelectors(data) {
-    $("pill-cache").textContent = data.data_from_cache ? "Cached" : "Live";
+    const el = $("data-refreshed-at");
+    if (el) {
+      el.textContent = "Data last refreshed: " + formatDataRefreshed(data.generated_at);
+    }
 
     const sel = $("week-select");
     sel.innerHTML = "";
@@ -590,26 +547,17 @@
     });
   }
 
-  async function refreshDashboardData() {
-    const btn = $("btn-refresh-data");
-    if (btn) btn.disabled = true;
-    try {
-      const res = await fetch("data.js?t=" + Date.now(), { cache: "no-store" });
-      if (!res.ok) throw new Error("fetch failed");
-      const text = await res.text();
-      const start = text.indexOf("{");
-      const end = text.lastIndexOf("}");
-      if (start < 0 || end <= start) throw new Error("could not parse data.js");
-      const fresh = JSON.parse(text.slice(start, end + 1));
-      window.__PILOT_DASHBOARD__ = fresh;
-      populateSelectors(fresh);
-      renderView(fresh);
-    } catch (e) {
-      console.error("refreshDashboardData", e);
-      window.location.reload();
-    } finally {
-      if (btn) btn.disabled = false;
-    }
+  function parseDataJsText(text) {
+    const start = text.indexOf("{");
+    const end = text.lastIndexOf("}");
+    if (start < 0 || end <= start) throw new Error("could not parse data.js");
+    return JSON.parse(text.slice(start, end + 1));
+  }
+
+  async function fetchDashboardPayload() {
+    const res = await fetch("data.js?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("fetch failed: " + res.status);
+    return parseDataJsText(await res.text());
   }
 
   function init() {
@@ -618,7 +566,7 @@
       data = getData();
     } catch (e) {
       $("app-root").innerHTML =
-        '<p class="err">Could not load dashboard data. Run <code>python build_dashboard.py</code> and open this page via a local server (e.g. <code>python serve_dashboard.py</code>).</p>';
+        '<p class="err">Could not load dashboard data. Run <code>python build_dashboard.py</code> and open this page via HTTP (e.g. <code>python serve_dashboard.py</code>) — opening <code>index.html</code> as a file cannot load <code>data.js</code>.</p>';
       console.error(e);
       return;
     }
@@ -634,24 +582,26 @@
     sel.addEventListener("change", () => renderView(getData()));
     $("flow-participant").addEventListener("change", () => renderView(getData()));
 
-    const refreshBtn = $("btn-refresh-data");
-    if (refreshBtn) {
-      refreshBtn.addEventListener("click", () => {
-        refreshDashboardData();
-      });
-    }
-
-    const participantSlot = $("participant-slot");
-    if (participantSlot) {
-      participantSlot.addEventListener("change", onDebtPaydownChange);
-    }
-
     renderView(data);
   }
 
+  async function bootstrap() {
+    try {
+      window.__PILOT_DASHBOARD__ = await fetchDashboardPayload();
+      init();
+    } catch (e) {
+      console.error("bootstrap", e);
+      const root = $("app-root");
+      if (root) {
+        root.innerHTML =
+          '<p class="err">Could not load dashboard data. Run <code>python build_dashboard.py</code> then open via HTTP (e.g. <code>python serve_dashboard.py</code>).</p>';
+      }
+    }
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", bootstrap);
   } else {
-    init();
+    bootstrap();
   }
 })();

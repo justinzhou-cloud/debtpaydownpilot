@@ -2,10 +2,10 @@
 """
 Generate static dashboard: dashboard/index.html reads dashboard/data.json.
 
-  .venv/bin/python build_dashboard.py           # use .pilot_cache/ if present else Snowflake
-  .venv/bin/python build_dashboard.py --live    # force Snowflake + refresh cache
+  .venv/bin/python build_dashboard.py           # Snowflake if no cache; else .pilot_cache (skips if SQL newer)
+  .venv/bin/python build_dashboard.py --live    # always Snowflake + overwrite .pilot_cache/
 
-Open dashboard/index.html in a browser (or serve with any static file server).
+Open via HTTP (e.g. python serve_dashboard.py); the UI fetches data.js with cache-busting.
 """
 
 from __future__ import annotations
@@ -42,6 +42,7 @@ from pilot_data import (
     today_manual_withdraw_by_participant,
     build_daily_activity,
     clear_data_cache_files,
+    data_cache_stale_vs_sql,
 )
 from snowflake_client import ROOT
 from theme import CHART_GREEN_MUTED, CHART_LINE_TEAL, CHART_RED_MUTED, DD_GRAY_200, DD_GRAY_600
@@ -84,9 +85,15 @@ def load_frames(*, force_live: bool) -> tuple[pd.DataFrame, pd.DataFrame, pd.Dat
         save_data_cache(cohort, activity, alloc_df)
         return cohort, activity, alloc_df, False
     cached = load_data_cache()
-    if cached is not None:
+    stale_vs_sql = data_cache_stale_vs_sql()
+    if cached is not None and not stale_vs_sql:
         alloc = load_allocation_cache()
         return cached[0], cached[1], prepare_allocation_events_df(alloc), True
+    if cached is not None and stale_vs_sql:
+        print(
+            "SQL file(s) newer than .pilot_cache — re-querying Snowflake (use --live to always refresh).",
+            flush=True,
+        )
     cohort = run_query(load_sql(SQL_COHORT))
     activity = run_query(load_sql(SQL_ACTIVITY))
     alloc_raw = (
@@ -102,7 +109,7 @@ def main() -> None:
     ap.add_argument(
         "--live",
         action="store_true",
-        help="Force Snowflake refresh and overwrite .pilot_cache/",
+        help="Always re-query Snowflake (use when warehouse data changed but SQL files did not)",
     )
     args = ap.parse_args()
 
@@ -111,7 +118,7 @@ def main() -> None:
     if not SQL_COHORT.is_file() or not SQL_ACTIVITY.is_file():
         raise SystemExit("Missing sql/pilot_dasher_weeks.sql or sql/pilot_activity.sql")
 
-    cohort_raw, activity_raw, events_df, from_cache = load_frames(force_live=args.live)
+    cohort_raw, activity_raw, events_df, _ = load_frames(force_live=args.live)
     if cohort_raw is None or cohort_raw.empty:
         raise SystemExit("No cohort data returned from Snowflake.")
 
@@ -200,7 +207,7 @@ def main() -> None:
             }
 
         n_sj = len(wk_view)
-        card_min = max(420, 92 + n_sj * 28 + 120)
+        card_min = max(436, 92 + n_sj * 30 + 128)
         views[sel_key] = {
             "week_context": week_context,
             "kpi_html": kpi_html,
@@ -217,7 +224,6 @@ def main() -> None:
 
     payload = {
         "generated_at": pd.Timestamp.now().isoformat(),
-        "data_from_cache": from_cache,
         "title": "Debt paydown Pilot",
         "theme": theme_payload(),
         "week_options": week_options,
@@ -235,7 +241,10 @@ def main() -> None:
     )
     print(f"Wrote {DATA_JSON.resolve()}")
     print(f"Wrote {DATA_JS.resolve()}")
-    print(f"Open file://{DASH_DIR.resolve() / 'index.html'} or run: python serve_dashboard.py")
+    print("Preview: python serve_dashboard.py  (data.js is loaded over HTTP, not as file://)")
+    print("—" * 52)
+    print(f"generated_at: {payload['generated_at']}")
+    print("—" * 52)
 
 
 if __name__ == "__main__":

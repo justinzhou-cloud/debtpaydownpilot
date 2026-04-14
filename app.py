@@ -8,12 +8,22 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from flask import Flask, abort, send_from_directory
+from flask import Flask, abort, request, send_from_directory
 
 ROOT = Path(__file__).resolve().parent
 DASH = ROOT / "dashboard"
 
 app = Flask(__name__)
+
+
+@app.after_request
+def _no_store_dashboard_data(response):
+    """Avoid stale metrics: intermediaries often cache script URLs without query strings."""
+    path = (request.path or "").rstrip("/")
+    if path.endswith("data.js") or path.endswith("data.json"):
+        response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+        response.headers["Pragma"] = "no-cache"
+    return response
 
 
 @app.get("/")
