@@ -1,0 +1,6 @@
+# Databricks Apps — https://docs.databricks.com/aws/en/dev-tools/databricks-apps/app-runtime
+# Port: DATABRICKS_APP_PORT is set by the runtime (see system env docs).
+command:
+  - sh
+  - -c
+  - exec gunicorn app:app --workers 2 --bind 0.0.0.0:$DATABRICKS_APP_PORT

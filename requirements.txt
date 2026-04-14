@@ -1,3 +1,6 @@
 snowflake-connector-python[pandas]>=3.7,<4
 pandas>=2.0,<3
 plotly>=5.18,<6
+# Databricks Apps (static dashboard server)
+flask>=3.0,<4
+gunicorn>=22.0,<24
