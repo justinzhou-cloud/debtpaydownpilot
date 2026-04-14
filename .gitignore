@@ -4,5 +4,5 @@ venv/
 __pycache__/
 *.pyc
 .pilot_cache/
-dashboard/data.js
-dashboard/data.json
+# dashboard/data.js + data.json are committed so Databricks Apps (and fresh clones) load the UI.
+# Re-run: python build_dashboard.py — then commit when data should update. Use a private repo if sensitive.
