@@ -45,6 +45,7 @@ window.__PILOT_DASHBOARD__ = {
     "John Baker",
     "Jonathan N",
     "Kimberly",
+    "Marc Compher",
     "Preston",
     "Rudy"
   ],
@@ -393,6 +394,35 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             5.949999999999999,
             9.81,
+            0.0
+          ],
+          "outs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Marc Compher": {
+          "labels": [
+            "Mar 30",
+            "Mar 31",
+            "Apr 1",
+            "Apr 2",
+            "Apr 3",
+            "Apr 4",
+            "Apr 5"
+          ],
+          "ins": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
             0.0
           ],
           "outs": [
@@ -821,6 +851,35 @@ window.__PILOT_DASHBOARD__ = {
             0.0
           ]
         },
+        "Marc Compher": {
+          "labels": [
+            "Apr 6",
+            "Apr 7",
+            "Apr 8",
+            "Apr 9",
+            "Apr 10",
+            "Apr 11",
+            "Apr 12"
+          ],
+          "ins": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "outs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
         "Preston": {
           "labels": [
             "Apr 6",
@@ -884,47 +943,47 @@ window.__PILOT_DASHBOARD__ = {
     },
     "2026-04-13": {
       "week_context": "Week of Apr 13, 2026",
-      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">9 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
-      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$14.94</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$132.56</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$117.62</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$5.52</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$23.97</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$18.45</span></td><td class=\"col-num col-bal\">$33.37</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$7.33</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$12.29</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$4.96</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$6.09</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$8.28</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$2.19</span></td><td class=\"col-num col-bal\">$1.63</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$5.21</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$7.70</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$2.49</span></td><td class=\"col-num col-bal\">$0.78</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$3.36</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$4.53</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$1.17</span></td><td class=\"col-num col-bal\">$3.36</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">15%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$15.67</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$15.67</span></td><td class=\"col-num col-bal\">$23.89</td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$1.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$1.00</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$9.18</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$9.18</span></td><td class=\"col-num col-bal\">$9.41</td><td class=\"col-flags\"></td></tr></tbody></table></div>",
+      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">10 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
+      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$30.06</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$148.56</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$118.50</span></td><td class=\"col-num col-bal\">$0.12</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$8.21</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$23.97</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$15.76</span></td><td class=\"col-num col-bal\">$36.06</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$19.23</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$19.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$0.23</span></td><td class=\"col-num col-bal\">$0.46</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val sj-pct-val--down\">5%</span><span class=\"sj-arrow-ind sj-arrow-down\" aria-hidden=\"true\">\u25bc</span><span class=\"sj-tip\">Changed from 10% to 5% on Apr 16, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$8.01</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$12.97</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$4.96</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$6.80</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$10.07</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$3.27</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$7.17</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$9.91</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$2.74</span></td><td class=\"col-num col-bal\">$1.08</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$8.14</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$8.14</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$4.86</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$4.53</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$0.33</span></td><td class=\"col-num col-bal\">$4.86</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">15%</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$20.47</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$20.47</span></td><td class=\"col-num col-bal\">$28.69</td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$1.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$1.00</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"></td></tr></tbody></table></div>",
       "attainment": {
         "labels": [
           "Efren",
           "Cynthia",
-          "Crystal Shead",
           "Marc Compher",
-          "Dylan",
-          "Preston",
-          "John Baker",
           "Rudy",
+          "Crystal Shead",
+          "John Baker",
+          "Preston",
+          "Dylan",
           "Kimberly",
           "Christy",
           "Jonathan N",
           "Angelo"
         ],
         "pcts": [
-          57.8611125,
-          52.600528571428576,
-          39.574444,
-          34.01852222222222,
+          88.21875,
+          80.11508095238095,
+          65.36420000000001,
+          48.06111,
+          47.314444,
+          28.835068749999998,
+          28.3642,
           25.765154545454543,
-          25.487655555555556,
-          25.140625,
-          23.980555,
-          16.27468888888889,
+          22.66048888888889,
           8.361112499999999,
           0.0,
           0.0
         ],
         "hours": [
-          4.628889,
-          11.046111,
-          9.893611,
-          3.061667,
+          7.0575,
+          16.824167,
+          5.882778,
+          9.612222,
+          11.828611,
+          9.227222,
+          5.105556,
           2.834167,
-          4.587778,
-          8.045,
-          4.796111,
-          1.464722,
+          2.039444,
           0.668889,
           0.0,
           0.0
@@ -932,12 +991,12 @@ window.__PILOT_DASHBOARD__ = {
         "goals": [
           8.0,
           21.0,
-          25.0,
           9.0,
-          11.0,
-          18.0,
-          32.0,
           20.0,
+          25.0,
+          32.0,
+          18.0,
+          11.0,
           9.0,
           8.0,
           14.0,
@@ -960,8 +1019,8 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             33.7,
             25.79,
-            8.81,
-            0.0,
+            46.11,
+            8.35,
             0.0,
             0.0,
             0.0
@@ -969,8 +1028,8 @@ window.__PILOT_DASHBOARD__ = {
           "outs": [
             171.72,
             15.43,
-            2.1799999999999997,
-            0.0,
+            27.950000000000003,
+            22.05,
             0.0,
             0.0,
             0.0
@@ -1047,8 +1106,8 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             3.52,
             1.69,
-            0.0,
-            0.0,
+            0.75,
+            0.84,
             0.0,
             0.0,
             0.0
@@ -1057,7 +1116,7 @@ window.__PILOT_DASHBOARD__ = {
             6.69,
             1.01,
             0.0,
-            0.0,
+            2.37,
             0.0,
             0.0,
             0.0
@@ -1076,7 +1135,7 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             10.690000000000001,
             3.25,
-            1.0,
+            16.12,
             0.0,
             0.0,
             0.0,
@@ -1085,7 +1144,7 @@ window.__PILOT_DASHBOARD__ = {
           "outs": [
             124.0,
             8.559999999999999,
-            0.0,
+            16.0,
             0.0,
             0.0,
             0.0,
@@ -1105,7 +1164,7 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             0.0,
             2.8600000000000003,
-            0.5,
+            2.0,
             0.0,
             0.0,
             0.0,
@@ -1134,8 +1193,8 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             12.62,
             3.0500000000000003,
-            0.0,
-            0.0,
+            4.35,
+            0.45,
             0.0,
             0.0,
             0.0
@@ -1164,7 +1223,7 @@ window.__PILOT_DASHBOARD__ = {
             2.45,
             1.01,
             2.63,
-            0.0,
+            1.08,
             0.0,
             0.0,
             0.0
@@ -1172,7 +1231,7 @@ window.__PILOT_DASHBOARD__ = {
           "outs": [
             6.27,
             1.01,
-            1.0,
+            2.63,
             0.0,
             0.0,
             0.0,
@@ -1221,7 +1280,7 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             2.15,
             1.87,
-            1.5,
+            4.1899999999999995,
             0.0,
             0.0,
             0.0,
@@ -1231,6 +1290,35 @@ window.__PILOT_DASHBOARD__ = {
             23.97,
             0.0,
             0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Marc Compher": {
+          "labels": [
+            "Apr 13",
+            "Apr 14",
+            "Apr 15",
+            "Apr 16",
+            "Apr 17",
+            "Apr 18",
+            "Apr 19"
+          ],
+          "ins": [
+            0.0,
+            0.0,
+            8.139999999999999,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "outs": [
+            0.0,
+            0.0,
+            8.14,
             0.0,
             0.0,
             0.0,
@@ -1251,7 +1339,7 @@ window.__PILOT_DASHBOARD__ = {
             1.3,
             4.85,
             1.1800000000000002,
-            0.0,
+            0.68,
             0.0,
             0.0,
             0.0
@@ -1260,7 +1348,7 @@ window.__PILOT_DASHBOARD__ = {
             6.26,
             4.85,
             1.18,
-            0.0,
+            0.68,
             0.0,
             0.0,
             0.0
@@ -1279,8 +1367,8 @@ window.__PILOT_DASHBOARD__ = {
           "ins": [
             0.97,
             7.21,
-            1.0,
-            0.0,
+            5.75,
+            5.3,
             0.0,
             0.0,
             0.0
@@ -1289,7 +1377,7 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             0.0,
             0.0,
-            0.0,
+            19.0,
             0.0,
             0.0,
             0.0
@@ -1300,60 +1388,60 @@ window.__PILOT_DASHBOARD__ = {
     },
     "__total_since_mar30__": {
       "week_context": "Total",
-      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">11 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
-      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$289.06</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$336.20</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$47.14</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$193.63</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$193.63</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$114.13</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$136.50</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$22.37</span></td><td class=\"col-num col-bal\">$9.41</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$109.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$108.28</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$1.00</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$57.20</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$68.33</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$11.13</span></td><td class=\"col-num col-bal\">$1.63</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$47.47</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$48.69</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$1.22</span></td><td class=\"col-num col-bal\">$0.78</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 12, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$54.40</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$30.51</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$23.89</span></td><td class=\"col-num col-bal\">$23.89</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 10, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$62.65</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$29.28</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$33.37</span></td><td class=\"col-num col-bal\">$33.37</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 7, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$31.61</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$28.25</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$3.36</span></td><td class=\"col-num col-bal\">$3.36</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">20%</span><span class=\"sj-tip\">Set to 20% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$9.70</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$9.70</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$32.92</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$32.92</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">no inflow</span></td></tr></tbody></table></div>",
+      "kpi_html": "<div class=\"ga-row\"><div class=\"mc mc-entries\"><div class=\"mc-label\">Allocation on</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div><div class=\"mc mc-entries\"><div class=\"mc-label\">Jar contributors</div><div class=\"mc-count-md\">12 / 12</div><div class=\"mc-meta\">On track</div></div></div>",
+      "participant_table_html": "<div class=\"trend-table-wrap\"><table class=\"trend-table trend-table--participants\"><thead><tr><th>Participant</th><th>Jar %</th><th>Inflow</th><th>Outflow</th><th>Net</th><th>Jar bal.</th><th>Flags</th></tr></thead><tbody><tr><td class=\"col-name\">Cynthia</td><td class=\"col-pct\"><span class=\"sj-pct-val\">20%</span></td><td class=\"col-num\"><span class=\"money-in\">+$304.18</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$352.20</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$48.02</span></td><td class=\"col-num col-bal\">$0.12</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Preston</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val sj-pct-val--down\">5%</span><span class=\"sj-arrow-ind sj-arrow-down\" aria-hidden=\"true\">\u25bc</span><span class=\"sj-tip\">Changed from 10% to 5% on Apr 16, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$194.31</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$194.31</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Rudy</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$124.18</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$155.50</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$31.32</span></td><td class=\"col-num col-bal\">$0.46</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Jonathan N</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$109.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$108.28</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$1.00</span></td><td class=\"col-num col-bal\">$1.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">John Baker</td><td class=\"col-pct\"><span class=\"sj-pct-val\">10%</span></td><td class=\"col-num\"><span class=\"money-in\">+$58.28</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$69.96</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$11.68</span></td><td class=\"col-num col-bal\">$1.08</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Crystal Shead</td><td class=\"col-pct\"><span class=\"sj-pct-val\">5%</span></td><td class=\"col-num\"><span class=\"money-in\">+$49.06</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$51.06</span></td><td class=\"col-num\"><span class=\"money-net-neg\">\u2212$2.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Efren</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 12, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$59.20</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$30.51</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$28.69</span></td><td class=\"col-num col-bal\">$28.69</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Kimberly</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 10, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$65.34</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$29.28</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$36.06</span></td><td class=\"col-num col-bal\">$36.06</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Dylan</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">10%</span><span class=\"sj-tip\">Changed from 5% to 10% on Apr 7, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$33.11</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$28.25</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$4.86</span></td><td class=\"col-num col-bal\">$4.86</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Angelo</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">20%</span><span class=\"sj-tip\">Set to 20% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$9.70</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$9.70</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Marc Compher</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 14, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$8.14</span></td><td class=\"col-num\"><span class=\"money-out\">\u2212$8.14</span></td><td class=\"col-num\"><span class=\"money-net-zero\">$0.00</span></td><td class=\"col-num col-bal\">$0.00</td><td class=\"col-flags\"><span class=\"flag\">withdrawal</span></td></tr><tr><td class=\"col-name\">Christy</td><td class=\"col-pct\"><span class=\"sj-arrow-wrap\"><span class=\"sj-pct-val\">15%</span><span class=\"sj-tip\">Set to 15% on Apr 1, 2026</span></span></td><td class=\"col-num\"><span class=\"money-in\">+$32.92</span></td><td class=\"col-num\"><span class=\"money-zero\">$0.00</span></td><td class=\"col-num\"><span class=\"money-net-pos\">+$32.92</span></td><td class=\"col-num col-bal\">\u2014</td><td class=\"col-flags\"></td></tr></tbody></table></div>",
       "attainment": {
         "labels": [
           "Kimberly",
           "Cynthia",
           "Efren",
-          "Preston",
           "Marc Compher",
+          "Preston",
+          "Rudy",
           "Jonathan N",
           "Crystal Shead",
-          "Rudy",
           "Christy",
           "Dylan",
           "John Baker",
           "Angelo"
         ],
         "pcts": [
-          150.00514444444445,
-          142.294973015873,
-          141.0891208333333,
-          106.49537037037038,
-          99.09259259259258,
+          152.13374444444446,
+          151.46649047619047,
+          151.20833333333331,
+          109.54115185185185,
+          107.45421851851853,
+          97.31435166666667,
           97.1031738095238,
-          92.10444399999999,
-          89.28749999999998,
+          94.68444399999998,
           76.33217499999999,
           64.50589393939394,
-          49.52112291666666,
+          50.75260416666666,
           9.36279393939394
         ],
         "hours": [
-          40.501389,
-          89.645833,
-          33.861388999999996,
-          57.5075,
-          26.755,
+          41.076111000000004,
+          95.423889,
+          36.29,
+          29.576110999999997,
+          58.025278,
+          58.388611,
           40.783333,
-          69.07833299999999,
-          53.57249999999999,
+          71.01333299999999,
           18.319722,
           21.286945000000003,
-          47.540278,
+          48.7225,
           3.089722
         ],
         "goals": [
           27.0,
           63.0,
           24.0,
-          54.0,
           27.0,
+          54.0,
+          60.0,
           42.0,
           75.0,
-          60.0,
           24.0,
           33.0,
           96.0,
@@ -1381,7 +1469,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             85.88,
@@ -1400,7 +1489,8 @@ window.__PILOT_DASHBOARD__ = {
             58.64,
             33.7,
             25.79,
-            8.81
+            46.11,
+            8.35
           ],
           "outs": [
             62.379999999999995,
@@ -1419,7 +1509,8 @@ window.__PILOT_DASHBOARD__ = {
             78.07,
             171.72,
             15.43,
-            2.1799999999999997
+            27.950000000000003,
+            22.05
           ]
         },
         "Angelo": {
@@ -1440,7 +1531,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             0.0,
@@ -1451,6 +1543,7 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             0.0,
             9.7,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1471,6 +1564,7 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             0.0,
             9.7,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1499,7 +1593,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             0.0,
@@ -1518,9 +1613,11 @@ window.__PILOT_DASHBOARD__ = {
             9.71,
             0.0,
             0.0,
+            0.0,
             0.0
           ],
           "outs": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1558,7 +1655,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             1.51,
@@ -1577,7 +1675,8 @@ window.__PILOT_DASHBOARD__ = {
             11.83,
             3.52,
             1.69,
-            0.0
+            0.75,
+            0.84
           ],
           "outs": [
             0.0,
@@ -1596,7 +1695,8 @@ window.__PILOT_DASHBOARD__ = {
             10.0,
             6.69,
             1.01,
-            0.0
+            0.0,
+            2.37
           ]
         },
         "Cynthia": {
@@ -1617,7 +1717,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             15.600000000000001,
@@ -1636,7 +1737,8 @@ window.__PILOT_DASHBOARD__ = {
             4.04,
             10.690000000000001,
             3.25,
-            1.0
+            16.12,
+            0.0
           ],
           "outs": [
             0.0,
@@ -1655,6 +1757,7 @@ window.__PILOT_DASHBOARD__ = {
             15.0,
             124.0,
             8.559999999999999,
+            16.0,
             0.0
           ]
         },
@@ -1676,7 +1779,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             0.0,
@@ -1695,7 +1799,8 @@ window.__PILOT_DASHBOARD__ = {
             4.53,
             0.0,
             2.8600000000000003,
-            0.5
+            2.0,
+            0.0
           ],
           "outs": [
             0.0,
@@ -1713,6 +1818,7 @@ window.__PILOT_DASHBOARD__ = {
             7.76,
             0.0,
             4.53,
+            0.0,
             0.0,
             0.0
           ]
@@ -1735,7 +1841,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             0.66,
@@ -1754,7 +1861,8 @@ window.__PILOT_DASHBOARD__ = {
             0.43,
             12.62,
             3.0500000000000003,
-            0.0
+            4.35,
+            0.45
           ],
           "outs": [
             0.0,
@@ -1768,6 +1876,7 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             26.32,
             4.1899999999999995,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -1794,7 +1903,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             12.58,
@@ -1813,7 +1923,8 @@ window.__PILOT_DASHBOARD__ = {
             6.029999999999999,
             2.45,
             1.01,
-            2.63
+            2.63,
+            1.08
           ],
           "outs": [
             25.34,
@@ -1832,7 +1943,8 @@ window.__PILOT_DASHBOARD__ = {
             4.5600000000000005,
             6.27,
             1.01,
-            1.0
+            2.63,
+            0.0
           ]
         },
         "Jonathan N": {
@@ -1853,7 +1965,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             12.04,
@@ -1872,7 +1985,8 @@ window.__PILOT_DASHBOARD__ = {
             8.979999999999999,
             0.0,
             0.0,
-            1.0
+            1.0,
+            0.0
           ],
           "outs": [
             12.04,
@@ -1889,6 +2003,7 @@ window.__PILOT_DASHBOARD__ = {
             11.95,
             12.35,
             16.009999999999998,
+            0.0,
             0.0,
             0.0,
             0.0
@@ -1912,7 +2027,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             1.95,
@@ -1931,7 +2047,8 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             2.15,
             1.87,
-            1.5
+            4.1899999999999995,
+            0.0
           ],
           "outs": [
             0.0,
@@ -1950,6 +2067,69 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             23.97,
             0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Marc Compher": {
+          "labels": [
+            "Mar 30",
+            "Mar 31",
+            "Apr 1",
+            "Apr 2",
+            "Apr 3",
+            "Apr 4",
+            "Apr 5",
+            "Apr 6",
+            "Apr 7",
+            "Apr 8",
+            "Apr 9",
+            "Apr 10",
+            "Apr 11",
+            "Apr 12",
+            "Apr 13",
+            "Apr 14",
+            "Apr 15",
+            "Apr 16"
+          ],
+          "ins": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            8.139999999999999,
+            0.0
+          ],
+          "outs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            8.14,
             0.0
           ]
         },
@@ -1971,7 +2151,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             38.32,
@@ -1990,7 +2171,8 @@ window.__PILOT_DASHBOARD__ = {
             4.96,
             1.3,
             4.85,
-            1.1800000000000002
+            1.1800000000000002,
+            0.68
           ],
           "outs": [
             25.0,
@@ -2009,7 +2191,8 @@ window.__PILOT_DASHBOARD__ = {
             0.0,
             6.26,
             4.85,
-            1.18
+            1.18,
+            0.68
           ]
         },
         "Rudy": {
@@ -2030,7 +2213,8 @@ window.__PILOT_DASHBOARD__ = {
             "Apr 12",
             "Apr 13",
             "Apr 14",
-            "Apr 15"
+            "Apr 15",
+            "Apr 16"
           ],
           "ins": [
             3.22,
@@ -2049,7 +2233,8 @@ window.__PILOT_DASHBOARD__ = {
             8.129999999999999,
             0.97,
             7.21,
-            1.0
+            5.75,
+            5.3
           ],
           "outs": [
             0.0,
@@ -2068,12 +2253,13 @@ window.__PILOT_DASHBOARD__ = {
             32.5,
             0.0,
             0.0,
-            0.0
+            0.0,
+            19.0
           ]
         }
       },
       "card_min_px": 392
     }
   },
-  "snowflake_refreshed_at": "2026-04-15T17:01:19.164398"
+  "snowflake_refreshed_at": "2026-04-16T14:32:42.354488"
 };
